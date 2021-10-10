@@ -28,3 +28,17 @@ Shows:
 ```
 167772161
 ```
+
+## Control Core Dump File ##
+
+Lift the core size limit:
+
+```
+ulimit -c unlimited
+```
+
+Enable core file per process:
+
+```
+echo "1" > /proc/sys/kernel/core_uses_pid
+```
