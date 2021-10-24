@@ -42,3 +42,11 @@ Enable core file per process:
 ```
 echo "1" > /proc/sys/kernel/core_uses_pid
 ```
+
+## SNGREP ##
+
+Reading content from a live capture pcap file
+
+```
+tail -c +1 -f /tmp/sipdump.pcap | sngrep -I -
+```
