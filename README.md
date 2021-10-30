@@ -50,3 +50,17 @@ Reading content from a live capture pcap file
 ```
 tail -c +1 -f /tmp/sipdump.pcap | sngrep -I -
 ```
+
+## GIT ##
+
+Undo last commit without losing its changes:
+
+```
+git reset HEAD~1
+```
+
+Undo last commit and lose its changes:
+
+```
+git reset --hard HEAD~1
+```
