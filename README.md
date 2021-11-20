@@ -64,3 +64,12 @@ Undo last commit and lose its changes:
 ```
 git reset --hard HEAD~1
 ```
+
+## OPENSSL ##
+
+Generate random string with a specific length encoded base64:
+
+```
+openssl rand -base64 15
+```
+
