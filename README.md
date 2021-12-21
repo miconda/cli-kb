@@ -73,3 +73,10 @@ Generate random string with a specific length encoded base64:
 openssl rand -base64 15
 ```
 
+## MacOS Apple Scripts ##
+
+Display the content of clipboard in a dialog, closing it after 5 seconds:
+
+```
+display dialog (the clipboard) with title "Clipboard" buttons {"OK"} default button "OK" giving up after 5
+```
