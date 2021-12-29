@@ -73,6 +73,18 @@ Generate random string with a specific length encoded base64:
 openssl rand -base64 15
 ```
 
+Connect and print certificate from server:
+
+```
+openssl s_client -showcerts -connect server.com:443
+```
+
+With server name indication (SNI):
+
+```
+openssl s_client -showcerts -servername server.com -connect server.com:443
+```
+
 ## MacOS Apple Scripts ##
 
 Display the content of clipboard in a dialog, closing it after 5 seconds:
